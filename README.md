@@ -8,14 +8,14 @@ CodePath Spring 2023 Unit 1 Project
 
 The following **required** functionality is completed:
 
-- [ ] **User has 3 chances to guess a random 4 letter word**
-- [ ] **After 3 guesses, user should no longer be able to submit another guess**
-- [ ] **After each guess, user sees the "correctness" of the guess**
-- [ ] **After all guesses are taken, user can see the target word displayed**
+- [:heavy check mark:] **User has 3 chances to guess a random 4 letter word**
+- [:heavy check mark:] **After 3 guesses, user should no longer be able to submit another guess**
+- [:heavy check mark:] **After each guess, user sees the "correctness" of the guess**
+- [:heavy check mark:] **After all guesses are taken, user can see the target word displayed**
 
 The following **optional** features are implemented:
 
-- [ ] User can toggle betweeen different word lists
+- [ ] User can toggle between different word lists
 - [ ] User can see the 'correctness' of their guess through colors on the word 
 - [ ] User sees a visual change after guessing the correct word
 - [ ] User can tap a 'Reset' button to get a new word and clear previous guesses
@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  

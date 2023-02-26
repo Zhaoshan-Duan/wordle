@@ -1,18 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv_guessone"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Guess #1"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_guessonecheck"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_guessone"
+            android:text="Guess #1 Check"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_guesstwo"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_guessonecheck"
+            android:text="Guess #2"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_guesstwocheck"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_guesstwo"
+            android:text="Guess #2 Check"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_guessthree"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_guesstwocheck"
+            android:text="Guess #3"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_guessthreecheck"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_guessthree"
+            android:text="Guess #3 Check"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_firstguess"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="star" />
+
+        <TextView
+            android:id="@+id/tv_firstguesscheck"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_firstguess"
+            tools:text="XXXX" />
+
+        <TextView
+            android:id="@+id/tv_secondguess"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_firstguesscheck"
+            tools:text="dogs" />
+
+        <TextView
+            android:id="@+id/tv_secondguesscheck"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_secondguess"
+            tools:text="XOXX" />
+
+        <TextView
+            android:id="@+id/tv_thirdguess"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_secondguesscheck"
+            tools:text="most" />
+
+        <TextView
+            android:id="@+id/tv_thirdguesscheck"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_thirdguess"
+            tools:text="XOXX" />
+
+        <EditText
+            android:id="@+id/et_guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/smallMargin"
+            android:ems="10"
+            android:hint="@string/hintText"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/smallMargin"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/guessBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/et_guess" />
+
+        <TextView
+            android:id="@+id/tv_target"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/et_guess"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_guessthreecheck"
+            tools:text="book" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
