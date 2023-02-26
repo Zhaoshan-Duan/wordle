@@ -8,10 +8,10 @@ CodePath Spring 2023 Unit 1 Project
 
 The following **required** functionality is completed:
 
-- [:heavy check mark:] **User has 3 chances to guess a random 4 letter word**
-- [:heavy check mark:] **After 3 guesses, user should no longer be able to submit another guess**
-- [:heavy check mark:] **After each guess, user sees the "correctness" of the guess**
-- [:heavy check mark:] **After all guesses are taken, user can see the target word displayed**
+- [:heavy_check_mark:] **User has 3 chances to guess a random 4 letter word**
+- [:heavy_check_mark:] **After 3 guesses, user should no longer be able to submit another guess**
+- [:heavy_check_mark:] **After each guess, user sees the "correctness" of the guess**
+- [:heavy_check_mark:] **After all guesses are taken, user can see the target word displayed**
 
 The following **optional** features are implemented:
 
